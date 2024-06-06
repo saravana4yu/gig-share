@@ -59,7 +59,6 @@ function Storage() {
             <div className="flex space-x-3">
               <div className="rounded-full mt-1.5 h-3 w-3" style={{ backgroundColor: value.color}}></div>
               {/*<div className=" bg-white rounded-full h-2 w-2"></div*/}
-              
               <div className="flex flex-col place-items-start">
                 <p className="font-josefin-sans text-gray-800 font-large">{value.name}</p>
                 <p className="font-josefin-sans text-gray-500 font-sm">{value.size}</p>

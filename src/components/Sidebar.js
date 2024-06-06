@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { FaFolder, FaSuitcase, FaTag, FaCog, FaPlus } from "react-icons/fa";
+import { FaFolder, FaSuitcase, FaTag, FaCog, FaPlus, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 function Sidebar() {
-  const [isDropdown, setIsDropdownStatus] = useState(false);
+  const [isDropdown, setIsDropdown] = useState(false);
 
   const toggleDropdown = () => {
-    setIsDropdownStatus(!isDropdown);
+    setIsDropdown(!isDropdown);
   };
 
   return (
@@ -47,25 +47,14 @@ function Sidebar() {
                 <FaFolder />
                 <span>Folders</span>
               </div>
-              <svg
-                className={`transform transition-transform duration-200 ${isDropdown ? "rotate-180" : ""}`}
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 9L12 15L18 9"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              {isDropdown ? (
+                <FaChevronUp className="transform transition-transform duration-200" />
+              ) : (
+                <FaChevronDown className="transform transition-transform duration-200" />
+              )}
             </button>
             {isDropdown && (
-              <div className="flex flex-col items-start w-full rounded-lg mt-2 space-y-2 px-4 py-0">
+              <div className="flex flex-col items-start w-full mt-2 space-y-2 px-4 py-0">
                 <a href="#" className="font-josefin-sans flex items-center space-x-2 hover:text-gray-400 w-full">
                   <span className="h-2 w-2 bg-green-500"></span>
                   <span>Marketing</span>
