@@ -17,10 +17,10 @@ const avatarImages = [
 
 function LastFile() {
   return (
-    <div className="bg-white mt-12 p-6 rounded-2xl shadow-md w-full relative" style={{ maxHeight: "450px", minHeight: "450px" }}>
+    <div className="bg-white mt-12 p-6 rounded-[30px] shadow-md w-full relative" style={{ maxHeight: "450px", minHeight: "450px" }}>
       <div className="flex justify-between mx-3 mb-3">
-        <h3 className="font-poppins text-xl font-semibold">Last File</h3>
-        <div className="outline outline-gray-200 outline-2 h-5 w-5 rounded-sm">
+        <h3 className="font-poppin text-3xl font-bold">Last File</h3>
+        <div className="outline outline-gray-200 outline-2 h-5 w-5 rounded-sm mt-2">
           <FaAngleDown className="text-gray-500 text-xl" />
         </div>
       </div>
@@ -33,7 +33,7 @@ function LastFile() {
                 {file.icon}
               </div>
               <div>
-                <p className="font-josefin-sans text-gray-800 font-large" style={{ maxWidth: "240px", minWidth: "240px" }}>{file.name}</p>
+                <p className="font-josefin-sans font-bold text-gray-800 font-large" style={{ maxWidth: "240px", minWidth: "240px" }}>{file.name}</p>
               </div>
             </div>
             <div className="flex -space-x-1 overflow-hidden" style={{ maxWidth: "240px", minWidth: "240px" }}>

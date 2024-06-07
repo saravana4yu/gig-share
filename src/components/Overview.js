@@ -6,16 +6,16 @@ import { IoMdNotificationsOutline, IoIosLogIn, IoMdSearch } from "react-icons/io
 
 function Overview() {
   return (
-    <div className="bg-custom rounded-tr-3xl rounded-br-3xl">
+    <div className="bg-custom rounded-tr-[48px] rounded-br-[48px]">
 
     
-    <div className="relative flex-grow py-16 px-10 bg-gray-200 rounded-3xl shadow-lg w-full z-10" style={{ maxWidth: "1180px", minWidth: "1180px", maxHeight: "1000px", minHeight: "1000px" }}>
+    <div className="relative flex-grow py-16 px-10 bg-gray-200 rounded-[48px] shadow-lg w-full z-10" style={{ maxWidth: "1180px", minWidth: "1180px", maxHeight: "1000px", minHeight: "1000px" }}>
 
       <header className="flex items-center justify-between mb-10">
         <div className="flex items-center space-x-4">
           <h1 className="font-poppins text-3xl font-semibold">Overview</h1>
-          <div className="bg-red-500 text-white px-2 rounded-3xl">
-            <span>185 GB</span>
+          <div className="font-josefin-sans bg-red-500 text-white mt-1.5 px-2 rounded-3xl">
+            <span className="p-1">185 GB</span>
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -40,7 +40,7 @@ function Overview() {
       </header>
       <main className="flex mt-12">
         <section className="flex-grow mr-6">
-          <h2 className="font-poppins mt-10 text-5xl font-bold mb-8 " style={{ maxWidth: "350px" }}>Manage your folders</h2>
+          <p className="font-poppin mt-10 text-5xl mb-8 font-bold" style={{ maxWidth: "350px" }}>Manage your folders</p>
           <p className="font-josefin-sans mt-10 mr-10 text-gray-600 text-xl " style={{ maxWidth: "350px" }}>
             Create folders to sort files and have quick access to documents
           </p>

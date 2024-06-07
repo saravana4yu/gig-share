@@ -27,9 +27,11 @@ module.exports = {
         g3: "#8c8f8d"
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
-        'josefin-sans': ['Josefin Sans', 'sans-serif'],
+        'poppins': ['Regulator Nova', 'sans-serif'],
+        'poppin': ['Regulator', 'sans-serif'],
+        'josefin-sans': ['Outfit', 'sans-serif'],
       },
+      
     },
   },
   plugins: [],

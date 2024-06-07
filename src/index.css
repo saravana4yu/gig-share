@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Regulator Nova';
+    src: url('/fonts/fonnts.com-Regulator_Nova_Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+   
+}
+@font-face {
+    font-family: 'Regulator';
+    src: url('/fonts/fonnts.com-Regulator_Nova_Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+   
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Regulator Nova', sans-serif;
+    font-family: 'Regulator', sans-serif;
+}

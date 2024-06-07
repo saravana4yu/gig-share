@@ -10,7 +10,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="bg-custom rounded-tl-3xl rounded-bl-3xl text-white flex flex-col justify-between items-center pt-16 w-full h-full " style={{ maxWidth: "280px", minWidth: "280px", maxHeight: "1000px", minHeight: "1000px" }}>
+    <div className="bg-custom rounded-tl-[48px] rounded-bl-[48px] text-white flex flex-col justify-between items-center pt-16 w-full h-full " style={{ maxWidth: "280px", minWidth: "280px", maxHeight: "1000px", minHeight: "1000px" }}>
       <div className="w-full flex flex-col items-center">
         <div>
           <div className="flex mb-10 items-center">
@@ -31,7 +31,7 @@ function Sidebar() {
             </div>
 
           </div>
-          <h2 className="font-josefin-sans text-xl font-semibold">Jennifer Ross</h2>
+          <h2 className="font-josefin-sans text-2xl">Jennifer Rass</h2>
         </div>
         <nav className="flex flex-col items-start w-full space-y-4 mt-24 px-16">
           <a href="#" className="font-josefin-sans flex items-center space-x-2 hover:text-gray-400 w-full">
@@ -81,8 +81,8 @@ function Sidebar() {
         </nav>
       </div>
       <div className="w-full px-14 pb-16">
-        <div className="relative border-dashed border-2 border-gray-700 rounded-xl p-4 h-48 flex flex-col items-center">
-          <div className="bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl p-4 h-full w-full flex flex-col items-center">
+        <div className="relative border-dashed border-2 border-gray-700 rounded-[32px] p-4 h-48 flex flex-col items-center">
+          <div className="bg-gradient-to-r from-gray-700 to-gray-600 rounded-[20px] p-4 h-full w-full flex flex-col items-center">
             <div className="font-josefin-sans text-white-400">Add files</div>
             <div className="font-josefin-sans text-gray-400 text-sm">Up to 20 GB</div>
             <button className="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-700 absolute bottom-14">
